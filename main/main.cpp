@@ -1,6 +1,6 @@
 
 /*
-    C++ implemenatation based on lcd library by maxsydnet.
+    C++ implemenatation based on lcd library by maxsydney.
     More information at: https://github.com/maxsydney/ESP32-HD44780
     May 2021
 */
