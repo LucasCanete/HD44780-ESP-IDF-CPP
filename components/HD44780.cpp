@@ -139,14 +139,14 @@ void LCD_I2C::writeChar(char c)
     LCD_writeByte(c, LCD_WRITE);                                        // Write data to DDRAM
 }
 
-void LCD_I2C::print(std::string str)
+void LCD_I2C::print(std::string str) const
 {
     for(char c : str){
         writeChar(c);
     }
 
 }
-void LCD_I2C::print(int i)
+void LCD_I2C::print(int i) const
 {
     std::string str = std::to_string(i);
 
@@ -156,7 +156,7 @@ void LCD_I2C::print(int i)
    
 }
 
-void LCD_I2C::print(char c)
+void LCD_I2C::print(char c) const
 {
     LCD_writeByte(c, LCD_WRITE);
 }
