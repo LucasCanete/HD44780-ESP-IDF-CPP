@@ -18,9 +18,9 @@ public:
     void home(void);
     void clear(void);
     void writeChar(char c);
-    void print(std::string str);
-    void print(int i); 
-    void print(char c);
+    void print(std::string str) const;
+    void print(int i) const; 
+    void print(char c) const;
 
     void println(std::string str);
     void println(int i);
